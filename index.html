@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vuqa | Business systems built in Kenya</title>
+  <meta name="description" content="Vuqa builds POS, lending and school management systems for Kenyan businesses, SACCOs and schools.">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Sora:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top" aria-label="Vuqa home">
+    <img src="images/vuqa-icon.png" alt="" width="36" height="36">
+    <span>Vuqa</span>
+  </a>
+  <nav aria-label="Main">
+    <a href="#systems">Systems</a>
+    <a href="#about">About</a>
+    <a href="#contact" class="btn btn-small">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Software that runs your shop, your SACCO and your school.</h1>
+      <p class="lead">Vuqa builds simple, secure systems for Kenyan businesses. Pick one, see it in action, and get started on WhatsApp.</p>
+      <div class="actions">
+        <a class="btn" href="#systems">Explore our systems</a>
+        <a class="btn btn-ghost" id="hero-wa" href="#contact">Chat on WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Interactive system preview (filled by main.js) -->
+    <div class="window" aria-label="System preview">
+      <div class="window-bar">
+        <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <div class="tabs" role="tablist" id="tabs"></div>
+      </div>
+      <div class="window-body" id="panel" role="tabpanel" aria-live="polite"></div>
+      <p class="sample">Sample figures for illustration</p>
+    </div>
+  </section>
+
+  <!-- CATALOG -->
+  <section class="section" id="systems">
+    <h2>Our systems</h2>
+    <p class="section-lead">Each system is ready to use and can be adjusted to fit how you work.</p>
+    <div class="grid" id="catalog"></div>
+  </section>
+
+  <!-- ABOUT (placeholder - we write this in a later step) -->
+  <section class="section about" id="about">
+    <h2>Built in Kenya, for Kenyan work</h2>
+    <p>Vuqa is a growing family of business systems. This website is part of the catalog too: built on free, modern tools so it loads fast and costs nothing to run.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <h2>Want to see a system in action?</h2>
+    <p class="section-lead">Tell us about your business and we will arrange a demo.</p>
+    <div class="actions">
+      <a class="btn" id="contact-wa" href="#">Chat on WhatsApp</a>
+      <a class="btn btn-ghost" href="tel:+254728440292">Call +254 728 440 292</a>
+      <a class="btn btn-ghost" href="mailto:vuqasystems@gmail.com">vuqasystems@gmail.com</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span>&copy; <span id="year"></span> Vuqa. All rights reserved.</span>
+  <span>vuqa.co.ke</span>
+</footer>
+
+<script src="js/systems.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
