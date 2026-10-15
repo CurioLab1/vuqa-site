@@ -13,74 +13,43 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div id="site-header"></div>
+<main>
 
-<header class="nav">
-  <a class="brand" href="#top" aria-label="Vuqa home">
-    <img src="images/vuqa-icon.png" alt="" width="36" height="36">
-    <span>Vuqa</span>
-  </a>
-  <nav aria-label="Main">
-    <a href="#systems">Systems</a>
-    <a href="#about">About</a>
-    <a href="#contact" class="btn btn-small">Contact</a>
-  </nav>
-</header>
+  <section class="slider" id="slider" aria-roledescription="carousel" aria-label="Featured systems"></section>
 
-<main id="top">
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Software that runs your shop, your SACCO and your school.</h1>
-      <p class="lead">Vuqa builds simple, secure systems for Kenyan businesses. Pick one, see it in action, and get started on WhatsApp.</p>
-      <div class="actions">
-        <a class="btn" href="#systems">Explore our systems</a>
-        <a class="btn btn-ghost" id="hero-wa" href="#contact">Chat on WhatsApp</a>
-      </div>
-    </div>
-
-    <!-- Interactive system preview (filled by main.js) -->
-    <div class="window" aria-label="System preview">
-      <div class="window-bar">
-        <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
-        <div class="tabs" role="tablist" id="tabs"></div>
-      </div>
-      <div class="window-body" id="panel" role="tabpanel" aria-live="polite"></div>
-      <p class="sample">Sample figures for illustration</p>
-    </div>
+  <section class="strip">
+    <div><strong>3</strong><span>systems live</span></div>
+    <div><strong>M-Pesa</strong><span>ready payments</span></div>
+    <div><strong>Cloud</strong><span>access from anywhere</span></div>
+    <div><strong>Local</strong><span>support on WhatsApp</span></div>
   </section>
 
-  <!-- CATALOG -->
   <section class="section" id="systems">
-    <h2>Our systems</h2>
-    <p class="section-lead">Each system is ready to use and can be adjusted to fit how you work.</p>
+    <h2 class="reveal">Our systems</h2>
+    <p class="section-lead reveal">Each system is ready to use and can be adjusted to fit how you work.</p>
     <div class="grid" id="catalog"></div>
   </section>
 
-  <!-- ABOUT (placeholder - we write this in a later step) -->
-  <section class="section about" id="about">
-    <h2>Built in Kenya, for Kenyan work</h2>
-    <p>Vuqa is a growing family of business systems. This website is part of the catalog too: built on free, modern tools so it loads fast and costs nothing to run.</p>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section contact" id="contact">
-    <h2>Want to see a system in action?</h2>
-    <p class="section-lead">Tell us about your business and we will arrange a demo.</p>
-    <div class="actions">
-      <a class="btn" id="contact-wa" href="#">Chat on WhatsApp</a>
-      <a class="btn btn-ghost" href="tel:+254728440292">Call +254 728 440 292</a>
-      <a class="btn btn-ghost" href="mailto:vuqasystems@gmail.com">vuqasystems@gmail.com</a>
+  <section class="section why">
+    <h2 class="reveal">Why Vuqa</h2>
+    <div class="grid">
+      <div class="why-item reveal"><h3>Simple to learn</h3><p>Clean screens that your staff can pick up in a day, not weeks.</p></div>
+      <div class="why-item reveal"><h3>Secure by design</h3><p>Your records and money data are protected and backed up.</p></div>
+      <div class="why-item reveal"><h3>Built for Kenya</h3><p>Made around how Kenyan shops, SACCOs and schools actually work.</p></div>
+      <div class="why-item reveal"><h3>Real support</h3><p>Talk to the people who built it, straight on WhatsApp.</p></div>
     </div>
   </section>
+
+  <section class="section cta">
+    <h2 class="reveal">Ready to see it in action?</h2>
+    <p class="section-lead reveal">Tell us about your business and we will arrange a demo.</p>
+    <div class="actions"><a class="btn" href="contact.html">Get in touch</a></div>
+  </section>
 </main>
-
-<footer class="footer">
-  <span>&copy; <span id="year"></span> Vuqa. All rights reserved.</span>
-  <span>vuqa.co.ke</span>
-</footer>
-
+<div id="site-footer"></div>
 <script src="js/systems.js"></script>
+<script src="js/layout.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
